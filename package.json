@@ -1,5 +1,5 @@
 {
-  "name": "@publish-demo/publish-demo",
+  "name": "@karstradt/publish-demo",
   "version": "1.0.0",
   "description": "Just to test how packaging works",
   "main": "index.js",

@@ -1,0 +1,20 @@
+0. Create a global .npmrc file and add:
+    //npm.pkg.github.com/:_authToken=<MY_TOKEN>
+
+    Create a local .npmrc file and add
+    npm login --scope=@karstradt --registry=https://npm.pkg.github.com
+
+    update the org in package.json from
+    "name": "publish-demo",
+    to
+    "name": "@publish-demo/publish-demo",
+
+1. login to npm registry with: npm login
+    Add the username, password, registered email pertaining to npm account
+    Add the OTP received in the email
+
+    Also make sure that the org used in the .npmrc is also present in the npm.registry.
+    In this case it is: karstradt
+
+2. to publish use command
+    npm publish --access=public
